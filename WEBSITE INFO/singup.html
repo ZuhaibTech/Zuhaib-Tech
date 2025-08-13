@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuhaib Portfolio</title>
+    <link rel="stylesheet" href="css/sign.css" />
+    <link rel="shortcut icon" href="Zuhaib.png" type="image/png" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo1">Zuhiab Web</a>
+
+      <nav class="navbar1">
+        <a href="Zuhaibweb.html" style="--i: 1" class="active">Home</a>
+        <a href="singup.html" style="--i: 2">Sign up</a>
+        <a href="Skills.html" style="--i: 3">Skills</a>
+      </nav>
+    </header>
+    <main>
+      <div class="fade-in">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter The Name" />
+      </div>
+      <div class="fade-in">
+        <label for="phone">Phone</label>
+        <input id="phone" type="number" placeholder="Enter The Number" />
+      </div>
+      <div class="fade-in">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter The Email" required />
+      </div>
+      <div class="fade-in">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter The Password"
+          required
+        />
+      </div>
+      <div class="fade-in">
+        <label for="DOB">Date Of Birth</label>
+        <input id="DOB" type="date" required />
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <p>Subscription Plan</p>
+        <label for="basic">Basic</label>
+        <input id="basic" type="radio" name="Subscription" value="basic" />
+
+        <label for="premium">Premium</label>
+        <input id="premium" type="radio" name="Subscription" value="premium" />
+
+        <label for="vip">VIP</label>
+        <input id="vip" type="radio" name="Subscription" value="vip" />
+      </div>
+      <div>
+        <label for="term">I agree to the terms and conditions</label>
+        <input id="term" type="checkbox" required />
+      </div>
+      <div class="fade-in">
+        <label for="comments">Comments</label>
+        <textarea
+          id="comments"
+          placeholder="Type A Comment"
+          rows="4"
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </main>
+
+    <footer>Copyright &copy; | All Rights reserved<</footer>
+    <script src="js/sign.js"></script>
+  </body>
+</html>

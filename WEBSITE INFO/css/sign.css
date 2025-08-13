@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "poppins", sans-serif;
+}
+body {
+  color: #ededed;
+  background: #081b29;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #051105;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo1 {
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+.navbar1 a {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: 0.3s;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.navbar1 a:hover {
+  color: #0ef;
+}
+/* Main Container */
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #0f2c44;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #66a3ff;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1.5px solid #66a3ff;
+  border-radius: 6px;
+  background-color: #102d47;
+  color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a0c4ff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 10px #66a3ff;
+  outline: none;
+  transform: scale(1.02);
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  background-color: #66a3ff;
+  color: #081b29;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0px #66a3ff;
+}
+
+button[type="submit"]:hover {
+  background-color: #a0c4ff;
+  box-shadow: 0 0 12px #66a3ff;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #0f2c44;
+  color: #66a3ff;
+  padding: 15px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  border-top: 4px solid #66a3ff;
+}
+
+/* Scroll Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Entry Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
